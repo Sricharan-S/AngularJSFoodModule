@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Time Bomb</title>
+    <link rel="stylesheet" href="styles\style.css"></link>
+  <script src="app\lib\angular.min.js"></script>
+  <script src="app\lib\angular-route.min.js"></script>
+  <script src="app\app.js"></script>
+  <script src="app\js1.js"></script>
+  </head>
+  <body ng-app="timeBomb">
+    <header ng-include="'header.html'"></header>
+    <div class="grid">
+    <main ng-view></main>
+        <div class="bill">
+        <div class="text">Bill Summary</div>
+        <ul class="foods" ng-controller="FoodController">
+          <li ng-repeat="food in foods" ng-show="food.available">{{food.item}} - {{food.nos}} 
+           <span class="rate" > {{food.rate}}</span>
+           </li>
+        </ul>
+
+        </div>
+      </div>
+  </body>
+</html>
