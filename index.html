@@ -12,16 +12,20 @@
   <body ng-app="timeBomb">
     <header ng-include="'header.html'"></header>
     <div class="grid">
-    <main ng-view></main>
-        <div class="bill">
-        <div class="text">Bill Summary</div>
-        <ul class="foods" ng-controller="FoodController">
-          <li ng-repeat="food in foods" ng-show="food.available">{{food.item}} - {{food.nos}} 
-           <span class="rate" > {{food.rate}}</span>
-           </li>
-        </ul>
+    <!--grid1-->
 
-        </div>
+    <main ng-view></main>
+
+    <!--grid2-->
+    <div class="bill">
+    <div class="text">Bill Summary</div>
+    <ul class="foods" ng-controller="FoodController" >
+      <li ng-repeat="item in foods" ng-show="showItem()"   >{{item.item}} - {{item.nos}}
+       <span class="rate" > {{item.rate}}</span>
+       </li>
+    </ul>
+
+    </div>
       </div>
   </body>
 </html>

@@ -1,0 +1,37 @@
+[{
+	"item": "POPCORN LARGE",
+	"rate": 140,
+	"nos": 0,
+	"thumb": "https://img.spicinemas.in/resources/images/food/vertical-popcorn-large.png",
+	"available": true
+}, {
+	"item": "CREAM DONUT",
+	"rate": 70,
+	"nos": 0,
+	"thumb": "https://img.spicinemas.in/resources/images/food/vertical-cream-donut.png",
+	"available": true
+}, {
+	"item": "NACHOS WITH CHEESE",
+	"rate": 150,
+	"nos": 0,
+	"thumb": "https://img.spicinemas.in/resources/images/food/vertical-nachos-with-salsa-and-cheese.png",
+	"available": true
+}, {
+	"item": "CHICKEN PUFF",
+	"rate": 70,
+	"nos": 0,
+	"thumb": "https://img.spicinemas.in/resources/images/food/vertical-chicken-puff.png",
+	"available": true
+}, {
+	"item": "CARAMEL POPCORN",
+	"rate": 120,
+	"nos": 0,
+	"thumb": "https://img.spicinemas.in/resources/images/food/vertical-caramel-popcorn.png",
+	"available": true
+}, {
+	"item": "COLD COFFEE",
+	"rate": 100,
+	"nos": 0,
+	"thumb": "https://img.spicinemas.in/resources/images/food/vertical-cold-coffee.png",
+	"available": true
+}]

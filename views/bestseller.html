@@ -1,62 +1,11 @@
-<div class="food">
-<div class="fooditem">
-  <img src="https://img.spicinemas.in/resources/images/food/vertical-popcorn-large.png">
-  <div class="text">POPCORN-LARGE</div>
-  <div class="price">Rs.140</div>
+<div class="food" >
+<div class="fooditem" ng-repeat = "food in foods">
+
+  <img ng-src="{{food.thumb}}">
+  <div class="text">{{food.item}}</div>
+  <div class="price">{{food.rate | currency:"₹"}}</div>
   <div id="plusminus">
-  <input type="button" value="-" id="moins" >
-<input type="text" size="1" value="0" id="count">
-  <input type="button" value="+" id="plus" >
-</div>
-</div>
-<div class="fooditem">
-  <img src="https://img.spicinemas.in/resources/images/food/vertical-cream-donut.png">
-  <div class="text">CREAM DONUT</div>
-  <div class="price">Rs.70</div>
-  <div id="plusminus">
-  <input type="button" value="-" id="moins" >
-<input type="text" size="1" value="0" id="count">
-  <input type="button" value="+" id="plus" >
-</div>
-</div>
-<div class="fooditem">
-  <img src="https://img.spicinemas.in/resources/images/food/vertical-nachos-with-salsa-and-cheese.png">
-  <div class="text">NACHOS WITH CHEESE</div>
-  <div class="price">Rs.150</div>
-  <div id="plusminus">
-  <input type="button" value="-" id="moins" >
-<input type="text" size="1" value="0" id="count">
-  <input type="button" value="+" id="plus" >
-</div>
-</div>
-<div class="fooditem">
-  <img src="https://img.spicinemas.in/resources/images/food/vertical-chicken-puff.png">
-  <div class="text">CHICKEN PUFF</div>
-  <div class="price">Rs.70</div>
-  <div id="plusminus">
-  <input type="button" value="-" id="moins" >
-<input type="text" size="1" value="0" id="count">
-  <input type="button" value="+" id="plus" >
-</div>
-</div>
-<div class="fooditem">
-  <img src="https://img.spicinemas.in/resources/images/food/vertical-caramel-popcorn.png">
-  <div class="text">CARAMEL POPCORN</div>
-  <div class="price">Rs.120</div>
-  <div id="plusminus">
-  <input type="button" value="-" id="moins" >
-<input type="text" size="1" value="0" id="count">
-  <input type="button" value="+" id="plus" >
-</div>
-</div>
-<div class="fooditem">
-  <img src="https://img.spicinemas.in/resources/images/food/vertical-cold-coffee.png">
-  <div class="text">COLD COFFEE</div>
-  <div class="price">Rs.100</div>
-  <div id="plusminus">
-  <input type="button" value="-" id="moins" >
-<input type="text" size="1" value="0" id="count">
-  <input type="button" value="+" id="plus" >
+  <input type="button" value="+" id="plus" ng-click="additem(food)" >
 </div>
 </div>
 </div>
