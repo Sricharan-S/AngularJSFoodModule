@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Krona+One');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
 body {
   margin: 0;
 }
@@ -79,7 +80,7 @@ main{
   text-align:center;
 }
 .fooditem{
-  border:1px solid #D1D1D1;
+  border:1px double #D1D1D1;
 
 }
 .bill{
@@ -97,7 +98,7 @@ main{
 
 .foods li{
   padding: 15px 0;
-  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #333;
   color: #444;
 }
 .rate{

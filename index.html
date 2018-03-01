@@ -19,13 +19,13 @@
     <!--grid2-->
     <div class="bill">
     <div class="text">Bill Summary</div>
-    <ul class="foods" ng-controller="FoodController" >
-      <li ng-repeat="item in foods" ng-show="showItem()"   >{{item.item}} - {{item.nos}}
+    <ul class="foods" ng-controller="BillController" >
+      <li ng-repeat="item in billfoods"  >{{item.item}} - {{item.nos}}
        <span class="rate" > {{item.rate}}</span>
        </li>
     </ul>
-
     </div>
+	{{total}}
       </div>
   </body>
 </html>

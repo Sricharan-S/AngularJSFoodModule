@@ -25,19 +25,33 @@ timeBomb.config(['$routeProvider',function($routeProvider){
 }]);
 
 
+timeBomb.service('cartservice',function(){
+	this.cartitems=[];
+	this.addtocart=function(item){
+		return this.cartitems.push(item);
+	}
+	this.computetotal =function(){
+		var total=0;
+		this.cartitems.forEach(function(item){
+			total +=item.rate;
+		});
+		return total;
+	}
+});
 
 
-
-timeBomb.controller('FoodController',['$scope','$http',function($scope,$http){
-
+timeBomb.controller('FoodController',['$scope','$http','cartservice',function($scope,$http,cartservice){
 
   $scope.additem = function (item) {
-
-        
-          console.log(item.available);
+          cartservice.addtocart(item);
 }
 
 $http.get('data/bestseller.json').then(function(res){
    $scope.foods = res.data;
  })
+}]);
+
+timeBomb.controller('BillController',['$scope','$rootScope','$http','cartservice',function($scope,$rootScope,$http,cartservice){
+          $scope.billfoods=cartservice.cartitems;
+          $rootScope.total=cartservice.computetotal();
 }]);
